@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>后台管理</title>
+        <link rel="icon" href="/image/xhxh.png">
+        <link rel="stylesheet" href="/css/index.css">
+    </head>
+<body>
+    <div class="column">
+        <form action="update" method="get">
+
+            <table class="updatetb">
+                <p style="text-align:left ;  font-size: 18px; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改信息</p>
+                <tr>
+                    <td><img src="/image/account.png" alt="id" width="30px" id="topimg" style="margin-left: 25px;">
+                    </td>
+                    <td><input type="text" name="id" id="id" value="" placeholder="学号" class="l20" /></td>
+                </tr>
+                <tr>
+                    <td><img src="/image/name.png" alt="name" width="30px" id="topimg" style="margin-left: 25px;">
+                    </td>
+                    <td><input type="text" name="name" id="name" value="" placeholder="姓名" class="l20" /></td>
+                </tr>
+                <tr>
+                    <td><img src="/image/gender.png" alt="gender" width="30px" id="topimg" style="margin-left: 25px;">
+                    </td>
+                    <td><input type="text" name="gender" id="gender" value="" placeholder="性别"
+                            class="l20" /></td>
+                </tr>
+                <tr>
+                    <td><img src="/image/class.png" alt="iclass" width="30px" id="topimg" style="margin-left: 25px;"></td>
+                    <td><input type="text" name="iclass" id="iclass" value="" placeholder="班级"
+                            class="l20" /></td>
+                </tr>
+                <tr>
+                    <td><img src="/image/mobile.png" alt="mobile" width="30px" id="topimg" style="margin-left: 25px;">
+                    </td>
+                    <td><input type="text" name="mobile" id="mobile" value="" placeholder="手机号"
+                            class="l20" /></td>
+                </tr>
+                <tr>
+                    <td><img src="/image/email.png" alt="email" width="30px" id="topimg" style="margin-left: 25px;"></td>
+                    <td><input type="text" name="email" id="email" value="" placeholder="邮箱"
+                            class="l20" /></td>
+                </tr>
+                <tr>
+                    <div style="text-align: right;">
+                        <th colspan="2">
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="submit" class="btn1" value="更新数据">
+                            <input type="reset" class="btn2" value="重填" />
+                        </th>
+                    </div>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="column">
+        <form action="add" method="get">
+
+            <table class="updatetb">
+                <p style="text-align:left ;  font-size: 18px; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;增加信息</p>
+                <tr>
+                    <td><img src="/image/account.png" alt="id" width="30px" id="topimg" style="margin-left: 25px;">
+                    </td>
+                    <td><input type="text" name="id" id="id" value="" placeholder="学号" class="l20" /></td>
+                </tr>
+                <tr>
+                    <td><img src="/image/name.png" alt="name" width="30px" id="topimg" style="margin-left: 25px;">
+                    </td>
+                    <td><input type="text" name="name" id="name" value="" placeholder="姓名" class="l20" /></td>
+                </tr>
+                <tr>
+                    <td><img src="/image/gender.png" alt="gender" width="30px" id="topimg" style="margin-left: 25px;">
+                    </td>
+                    <td><input type="text" name="gender" id="gender" value="" placeholder="性别"
+                            class="l20" /></td>
+                </tr>
+                <tr>
+                    <td><img src="/image/class.png" alt="iclass" width="30px" id="topimg" style="margin-left: 25px;"></td>
+                    <td><input type="text" name="iclass" id="iclass" value="" placeholder="班级"
+                            class="l20" /></td>
+                </tr>
+                <tr>
+                    <td><img src="/image/mobile.png" alt="mobile" width="30px" id="topimg" style="margin-left: 25px;">
+                    </td>
+                    <td><input type="text" name="mobile" id="mobile" value="" placeholder="手机号"
+                            class="l20" /></td>
+                </tr>
+                <tr>
+                    <td><img src="/image/email.png" alt="email" width="30px" id="topimg" style="margin-left: 25px;"></td>
+                    <td><input type="text" name="email" id="email" value="" placeholder="邮箱"
+                            class="l20" /></td>
+                </tr>
+                <tr>
+                    <div style="text-align: right;">
+                        <th colspan="2">
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="submit" class="btn1" value="添加数据">
+                            <input type="reset" class="btn2" value="重填" />
+                        </th>
+                    </div>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="column">
+        <form action="delete" method="get" >
+
+            <table class="updatetb">
+                <p style="text-align:left ;  font-size: 18px; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;删除信息</p>
+                <tr>
+                    <td><img src="/image/account.png" alt="id" width="30px" id="topimg" style="margin-left: 25px;">
+                    </td>
+                    <td><input type="text" name="id" id="id" value="" placeholder="学号" class="l20" /></td>
+                </tr>
+                <tr>
+                    <div style="text-align: right;">
+                        <th colspan="2">
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="submit" class="btn1" value="删除数据">
+                            <input type="reset" class="btn2" value="重填" />
+                        </th>
+                    </div>
+                </tr>
+            </table>
+        </form>
+    </div>
+        <div  class="newcolumn">
+            <form action="search" method="get">
+                <div class="text">
+                    <p style="text-align:left ;  font-size: 18px; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数据库查询</p>
+                    <input type="text" name="info" value="" placeholder="查询信息" class="l20" />
+                    <input type="text" name="page"  value="1" style="visibility:hidden;">
+                    <input type="text" name="pagelen" value="15" style="visibility:hidden;">
+                    <div style="text-align: left;">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="submit" class="btn1" value="查询">
+                        <input type="reset" class="btn2" value="重填" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    
+</body>
+</html>

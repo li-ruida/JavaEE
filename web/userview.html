@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>照片上传</title>
+    <link rel="icon" href="/image/xhxh.png">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+<h1 class="link" th:text="${session.name}">x</h1>
+    <p>更新照片</p>
+<form action="file"  id="tloginform" method="post"  enctype="multipart/form-data">
+    <div class="text">
+        <input type="file" name="file" id="file" value="">
+        <div >
+            <input type="submit" class="btn1" value="更新">
+            <input type="reset" class="btn2" value="重填" />
+        </div>
+    </div>
+</form>
+<p>当前照片</p>
+<img th:src="@{/upload/}+${session.id}+@{.png}" alt="暂无照片">
+
+</body>
+</html>

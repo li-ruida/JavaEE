@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+
+    <servlet><!--添加学生信息-->
+        <servlet-name>Find</servlet-name>
+        <servlet-class>Servlet.FinderServlet</servlet-class>
+        <init-param>
+            <param-name>contacts</param-name>
+            <param-value>1.xlsx,2.xlsx</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping><!--映射-->
+        <servlet-name>Find</servlet-name>
+        <url-pattern>/find</url-pattern>
+    </servlet-mapping>
+
+    <!-- 配置上下文参数 -->
+    <context-param>
+        <param-name>view-prefix</param-name>
+        <param-value>/</param-value>
+    </context-param>
+    <context-param>
+        <param-name>view-suffix</param-name>
+        <param-value>.html</param-value>
+    </context-param>
+</web-app>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>软院找人</title>
+    <link rel="icon" href="/image/xhxh.png">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body>
+<div class="row">
+    <div class="left">
+
+    </div>
+    <div class="right">
+        <div class="updatebd">
+            <p>&nbsp;</p>
+            <form action="find" method="get" id="tloginform">
+                <img src="/image/xiaohui.svg" alt="校徽" width="300px" style="text-align: center;">
+                <div class="text">
+                    <p style="text-align:center ;  font-size: 18px; ">&nbsp;表格数据查询</p>
+                    <input type="text" name="info" id="info" value="" placeholder="查询信息" class="l20" />
+                    <input type="text" name="page" id="page" value="1" style="visibility:hidden;">
+                    <input type="text" name="pagelen" id="pagelen" value="15" style="visibility:hidden;">
+                    <div style="text-align: center;">
+                        <input type="submit" class="btn1" value="查询">
+                        <input type="reset" class="btn2" value="重填" />
+                    </div>
+                </div>
+            </form>
+
+            <form action="search" method="get" id="tloginform">
+                <div class="text">
+                    <p style="text-align:center ;  font-size: 18px; ">&nbsp;数据库查询</p>
+                    <input type="text" name="info" value="" placeholder="查询信息" class="l20" />
+                    <input type="text" name="page"  value="1" style="visibility:hidden;">
+                    <input type="text" name="pagelen" value="15" style="visibility:hidden;">
+                    <div style="text-align: center;">
+                        <input type="submit" class="btn1" value="查询">
+                        <input type="reset" class="btn2" value="重填" />
+                    </div>
+                </div>
+            </form>
+            <br>
+            <br><br><br>
+
+            <a href="http://localhost:8080/login" class="link">登录</a>
+        </div>
+    </div>
+
+</div>
+
+
+
+</body>
+
+</html>

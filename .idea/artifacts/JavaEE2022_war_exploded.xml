@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="JavaEE2022:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/JavaEE2022_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="JavaEE2022/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="JavaEE2022" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="module" name="JUnit4" module-name="JavaEE2022" />
+          <element id="library" level="project" name="lib" />
+          <element id="library" level="project" name="commons-codec-1.15" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

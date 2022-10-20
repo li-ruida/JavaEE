@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>软院找人</title>
+    <link rel="icon" href="/image/xhxh.png">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body>
+
+    <div class="row">
+
+        <div class="leftcolumn">
+            <div class="result">
+                <table id="tbl_stu">
+                    <tr>
+                        <th class="w20">学号</th>
+                        <th class="w20">姓名</th>
+                        <th class="w20">性别</th>
+                        <th class="w20">班级</th>
+                        <th class="w20">手机号</th>
+                        <th class="w20">邮箱</th>
+                    </tr>
+                    <tr th:if="${#lists.isEmpty(session.infos)}">
+                        <td colspan="6">没有对应的信息!</td>
+                    </tr>
+                    <tr th:unless="${#lists.isEmpty(session.infos)}" th:each="c1: ${session.infos}">
+                        <td class="w20" th:text="${c1.id}"></td>
+                        <td class="w20" th:text="${c1.name}"></td>
+                        <td class="w20" th:text="${c1.gender}"></td>
+                        <td class="w20" th:text="${c1.iclass}"></td>
+                        <td class="w20" th:text="${c1.mobile}"></td>
+                        <td class="w20" th:text="${c1.email}"></td>
+
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <form action="search" method="get">
+            <div style="text-align: right;">
+            </div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td id="lll">
+                            <input type="text" name="info" id="info" th:value="${session.sforminfo}" placeholder="查询信息" class="l20"
+                                style="display:none;">
+                            <input type="text" name="page" id="page" value="1" style="display:none;">
+                        </td>
+                        <td>
+                            <img src="/image/sid.png" alt="页长" width="30px" id="topimg" style="margin-left: 25px;">
+                        </td>
+                        <td>
+                            <input type="text" name="pagelen" th:value="${session.pagelen}" placeholder="页长" class="l20">
+                        </td>
+                        <th colspan="2">
+                            <input type="submit" class="btn1" value="更新">
+                            <input type="reset" class="btn2" value="重填">
+                        </th>
+
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        <div class="pagelink">
+            <p class="link" th:text="${session.count}">x</p>
+            <a class="link" th:href="${session.sy}">首页</a>
+            <a class="link" th:href="${session.dyy}">第一页</a>
+            <a class="link" th:href="${session.syy}">上一页</a>
+            <a class="link" th:href="${session.xyy}">下一页</a>
+            <a class="link" th:href="${session.wy}" th:text="${session.wyh}">尾页</a>
+
+        </div>
+        
+    </div>
+
+</body>
+
+</html>

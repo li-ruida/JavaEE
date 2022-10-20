@@ -1,0 +1,303 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    font-family: Arial;
+    border: 0;
+
+}
+/*设置宽度,轨道颜色*/
+html::-webkit-scrollbar {
+	width: 5px;
+	height: 10px;
+	background: #fbfafa;   /*可以设置轨道颜色*/
+	padding-right: 2px;
+    
+}
+/*滚动条*/
+html::-webkit-scrollbar-thumb {
+	background: rgb(15, 93, 135);
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#topimg {
+    float: left;
+    padding-top: 3px;
+    font-size: 40px;
+}
+
+#top1 {
+    text-shadow: rgb(69, 131, 167);
+    color: rgb(239, 246, 246);
+    font-size: 22px;
+    text-align: center
+}
+
+.welcome1 {
+    text-align: right;
+    color: white;
+    font-size: 15px;
+}
+
+
+/* 链接颜色修改 */
+.topnav a:hover {
+    background-color: rgb(171, 171, 180);
+    color: black;
+}
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover {text-decoration:underline;}
+a:active {text-decoration:underline;}
+
+/* 列后面清除浮动 */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+.sc1 {
+    width: 80px;
+    height: 24px;
+    border-color: rgb(187, 187, 187);
+    border-width: 1px;
+    border-style: solid;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: normal;
+    font-style: normal;
+    background: rgb(41, 142, 246);
+}
+
+.sc2 {
+    width: 80px;
+    height: 24px;
+    border-color: rgb(187, 187, 187);
+    border-width: 1px;
+    border-style: solid;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: normal;
+    font-style: normal;
+    background: rgb(255, 158, 0);
+}
+.w20{
+    width: 150px;
+    text-align: center;
+}
+.result {
+    float: left;
+    width: 67%;
+    border-style: none;
+    border-color: unset;
+    box-shadow: rgba(145, 145, 145, 0.17) 0px 2px 6px 0px;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 0px;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+    font-weight: normal;
+    font-style: normal;
+    background: rgb(255, 255, 255);
+}
+.filter {
+    margin-top: 10px;
+    padding: 10px;
+    font-family: SourceHanSansSC;
+    font-weight: 400;
+    font-size: 17px;
+    color: rgb(147, 147, 147);
+    font-style: normal;
+    letter-spacing: 0px;
+    line-height: 20px;
+    text-decoration: none;
+}
+.l20{
+    width: 90%;
+    height: 40px;
+    border-color: rgb(220, 224, 231); 
+
+    border-style: none; 
+    border-color: unset; 
+    box-shadow: rgba(145, 145, 145, 0.17) 0px 2px 6px 0px; 
+    border-radius: 8px; 
+
+    border-width: 1px; 
+    border-style: solid; 
+    color: rgb(56, 148, 255); 
+    border-radius: 3px; 
+    font-size: 14px; 
+    padding: 0px; 
+    text-align: center; 
+    line-height: 20px; 
+    font-weight: normal; 
+    font-style: normal; 
+    background: rgb(255, 255, 255);
+}
+.btn1{
+    width: 95px;
+    height: 35px; 
+    border-style: none; 
+    border-color: unset; 
+    color: rgb(255, 255, 255); 
+    border-radius: 5px; 
+    font-size: 16px; 
+    padding: 0px; 
+    text-align: center; 
+    line-height: 23px; 
+    font-weight: normal; 
+    font-style: normal; 
+    background: rgb(54, 110, 185);
+}
+
+.btn2{
+    width: 95px;
+    height: 35px; 
+    border-style: none; 
+    border-color: unset; 
+    color: rgb(255, 255, 255); 
+    border-radius: 8px; 
+    font-size: 16px; 
+    padding: 0px; 
+    text-align: center; 
+    line-height: 23px; 
+    font-weight: normal; 
+    font-style: normal; 
+    background: rgb(86, 83, 83);
+}
+
+
+.w1 {
+    width: 200px;
+    height: 24px;
+    border-color: rgb(187, 187, 187);
+    border-width: 1px;
+    border-style: solid;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    border-radius: 8px;
+}
+
+.updatebd{
+    width: 800px; 
+    height: 300px; 
+    border-style: none; 
+    border-color: unset; 
+
+    border-radius: 8px; 
+    font-size: 14px; 
+    padding: 0px; 
+    text-align: center; 
+    line-height: 20px; 
+    margin-top: 10%;
+    margin-left: 13%;
+    font-weight: normal; 
+    font-style: normal; 
+
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+.left{
+    float: left;
+    width: 20%;
+    height: 70%;
+    border-style: none;
+    border-color: unset;
+    box-shadow: rgba(145, 145, 145, 0.17) 0px 2px 6px 0px;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 0px;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+    font-weight: normal;
+    font-style: normal;
+    background: rgb(255, 255, 255);
+}
+.right{
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+
+.link{
+    --lgutter: 160px;
+    --lgutterrev: -160px;
+    --polepadl: 180px;
+    --polepadl2: 120px;
+    --dtabpadl: 170px;
+    font: 14px/normal Arial,Helvetica,Sans-Serif;
+    --bminwidth: 1164px;
+    line-height: 1.2em;
+    --rgutter: 40px;
+    --crleft: 848px;
+    color: #666;
+    border: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    list-style: none;
+    margin: 0 0 4px;
+    content-visibility: auto;
+    contain-intrinsic-size: 628px 45px;
+    background-color: transparent;
+    padding: 26px 0 26px 20px;
+}
+.column {
+    float: left;
+    width: 15%;
+}
+.newcolumn {
+    float: left;
+    width: 45%;
+}
+#file{
+    margin: 10;
+    padding: 10;
+    font-family: Arial,sans-serif;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+    margin-left: 0;
+    left: 0;
+    top: 0;
+    outline: 0;
+    -webkit-appearance: none;
+    --lgutter: 160px;
+    --lgutterrev: -160px;
+    --polepadl: 180px;
+    --polepadl2: 120px;
+    --dtabpadl: 170px;
+    font: 14px/normal Arial,Helvetica,Sans-Serif;
+    --bminwidth: 1164px;
+    line-height: 1.2em;
+    --rgutter: 40px;
+    --crleft: 848px;
+    color: #666;
+    border: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    list-style: none;
+    margin: 0 0 4px;
+    content-visibility: auto;
+    contain-intrinsic-size: 628px 45px;
+    background-color: transparent;
+    padding: 26px 0 26px 20px;
+}
