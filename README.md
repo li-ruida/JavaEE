@@ -53,20 +53,19 @@
 
 
 ## 上机作业5
-使用自定义标记(custom tag)实现猜数游戏。
+>使用自定义标记(custom tag)实现猜数游戏。
 保持NumberGuessBean.java文件不变
 
-修改numguess.jsp文件，
+>修改numguess.jsp文件，
 将<%  numguess.reset();  %>修改为reset标记
 需要实现ResetTag标记处理器类。
 
-使用jstl将<% if %>这样的条件判断语句修改为标记调用。
+>使用jstl将<% if %>这样的条件判断语句修改为标记调用。
 建议使用JSTL提供的标记。（自学JSTL标记）
 
-本次作业要求就是将numguess.jsp中的所有嵌入Java代码
+>本次作业要求就是将numguess.jsp中的所有嵌入Java代码
 现象全部去掉，也就是去掉<%  %>这样的jsp代码。
 其余的jsp action, <jsp:useBean>等都不要做任何修改。
-
 jstl.zip是简单的jstl的例子程序，其中两个jstl jar包在
 /WEB-INF/lib文件夹
 
