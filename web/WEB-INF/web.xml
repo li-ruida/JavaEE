@@ -3,7 +3,38 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+    <display-name>spring</display-name>
 
+    <context-param>
+        <param-name>webAppRootKey</param-name>
+        <param-value>spring.root</param-value>
+    </context-param>
+
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener
+        </listener-class>
+    </listener>
+
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>/WEB-INF/app-context.xml</param-value>
+    </context-param>
+
+    <absolute-ordering />
+    <servlet>
+        <servlet-name>app</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet
+        </servlet-class>
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value></param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>app</servlet-name>
+        <url-pattern>/spring</url-pattern>
+    </servlet-mapping>
 
     <servlet><!--添加学生信息-->
         <servlet-name>Find</servlet-name>
@@ -28,6 +59,7 @@
         <param-name>view-suffix</param-name>
         <param-value>.html</param-value>
     </context-param>
+
     <jsp-config>
         <taglib>
             <taglib-uri>http://java.sun.com/jsp/jstl/fmt</taglib-uri>
@@ -48,4 +80,5 @@
         </taglib>
 
     </jsp-config>
+
 </web-app>

@@ -71,11 +71,10 @@ jstl.zip是简单的jstl的例子程序，其中两个jstl jar包在
 
 ## 上机作业6
 
-使用SpringMVC framework实现猜数游戏
+>使用SpringMVC framework实现猜数游戏
 保持NumberGuessBean.java不变。其余代码不限制。
 
-要求必须使用SpringMVC框架。
-
+>要求必须使用SpringMVC框架。
 spring的简单的例子：spring.zip
 spring框架在qq群文件里。
 
