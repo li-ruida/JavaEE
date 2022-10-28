@@ -33,7 +33,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>app</servlet-name>
-        <url-pattern>/spring</url-pattern>
+        <url-pattern>/spring </url-pattern>
     </servlet-mapping>
 
     <servlet><!--添加学生信息-->
